@@ -91,3 +91,14 @@ print(
 print(
     string.capwords("hello world", sep=",")
 )  # capitalizes the first letter of each word / Hello,World
+
+
+# Random module
+# Random module is used to generate random numbers, random choices, and random shuffling of a sequence.
+
+import random
+
+print(random.random())  # generates a random float between 0 and 1
+print(random.randint(1, 10))  # generates a random integer between 1 and 10
+print(random.choice(["apple", "banana", "cherry"]))  # selects a random item from a list
+print(random.shuffle(["apple", "banana", "cherry"]))  # shuffles a list in place
