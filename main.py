@@ -40,3 +40,15 @@ print(mean(ages))  # mean
 print(median(ages))  # median
 print(mode(ages))  # mode
 print(stdev(ages))  # standard deviation
+
+# Math Module
+# Provides many mathematical operations and constants.
+
+import math
+
+print(math.pi)  # pi constant
+print(math.sqrt(2))  # square root
+print(math.pow(3, 2))  # power / 8.0
+print(math.floor(9.81))  # rounding to lowest integer / 9.0
+print(math.ceil(9.81))  # rounding to highest integer / 10.0
+print(math.log10(100))  # logarithm / 2.0
