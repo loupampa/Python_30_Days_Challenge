@@ -62,3 +62,8 @@ print(math.log10(100))  # logarithm / 2.0
 # print(floor(9.81))         # 9, rounding to the lowest
 # print(ceil(9.81))          # 10, rounding to the highest
 # print(math.log10(100))     # 2
+
+# we can rename the name of the function
+
+# from math import pi as  PI
+# print(PI) # 3.141592653589793
