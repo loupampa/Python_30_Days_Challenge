@@ -67,3 +67,27 @@ print(math.log10(100))  # logarithm / 2.0
 
 # from math import pi as  PI
 # print(PI) # 3.141592653589793
+
+# String module
+# Many purposes like checking if a string is printable, checking if a string is whitespace, checking if a string is a digit, checking if a string is a letter, checking if a string is alphanumeric, checking if a string is lowercase, checking if a string is uppercase, and many more.
+import string
+
+print(
+    string.ascii_letters
+)  # all ascii letters / abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+print(
+    string.ascii_lowercase
+)  # all ascii lowercase letters / abcdefghijklmnopqrstuvwxyz
+print(string.ascii_uppercase)  # all ascii uppercase letters / ABCDEFGHIJKLMNOP
+print(string.digits)  # all ascii digits / 0123456789
+print(string.punctuation)  # all ascii punctuation / !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+print(string.whitespace)  # all ascii whitespace /  \t\n\r\x0b\x0c
+print(
+    string.printable
+)  # all printable ascii characters / 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+print(
+    string.capwords("hello world")
+)  # capitalizes the first letter of each word / Hello World
+print(
+    string.capwords("hello world", sep=",")
+)  # capitalizes the first letter of each word / Hello,World
