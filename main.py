@@ -25,7 +25,18 @@ print(Day12.generate_full_name("Lou", "Pampa"))
 # SYS module provides functions and variables used to manipulate different parts of the Python runtime environment.
 # Function sys.argv returns a list of command line arguments passed to a Python script. The item at index 0 in this list is always the name of the script, at index 1 is the argument passed from the command line.
 
-import sys
+# import sys
 
-# This line would print out: filename argument1 argument2
-print(f"Welcome {sys.argv[1]}. Enjoy {sys.argv[2]} challenge!")
+# # This line would print out: filename argument1 argument2
+# print(f"Welcome {sys.argv[1]}. Enjoy {sys.argv[2]} challenge!")
+
+# Statistics Module
+# Provides functions for mathematical statistics of numeric data. The popular statistical functions which are defince in this module: mean, median, mode, stdev etc.
+
+from statistics import *
+
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+print(mean(ages))  # mean
+print(median(ages))  # median
+print(mode(ages))  # mode
+print(stdev(ages))  # standard deviation
