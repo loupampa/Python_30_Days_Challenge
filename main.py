@@ -52,3 +52,13 @@ print(math.pow(3, 2))  # power / 8.0
 print(math.floor(9.81))  # rounding to lowest integer / 9.0
 print(math.ceil(9.81))  # rounding to highest integer / 10.0
 print(math.log10(100))  # logarithm / 2.0
+
+# we can also import all
+
+# from math import *
+# print(pi)                  # 3.141592653589793, pi constant
+# print(sqrt(2))             # 1.4142135623730951, square root
+# print(pow(2, 3))           # 8.0, exponential
+# print(floor(9.81))         # 9, rounding to the lowest
+# print(ceil(9.81))          # 10, rounding to the highest
+# print(math.log10(100))     # 2
