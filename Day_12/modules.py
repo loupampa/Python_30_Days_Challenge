@@ -26,7 +26,7 @@ def user_id_gen_by_user():
     return "\n".join(generated_ids)
 
 
-print(user_id_gen_by_user())
-print("#" * 50)
+# print(user_id_gen_by_user())
+# print("#" * 50)
 
 # def rgb_color_gen()
