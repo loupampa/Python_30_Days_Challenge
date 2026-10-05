@@ -53,3 +53,18 @@ def list_of_hexa_colors(count=1):
 print(list_of_hexa_colors(5))
 print(list_of_hexa_colors(1))
 print("#" * 50)
+
+
+def list_of_rgb_colors(count=1):
+    colors = []
+    for _ in range(count):
+        r = random.randint(0, 255)
+        g = random.randint(0, 255)
+        b = random.randint(0, 255)
+        colors.append(f"rgb({r}, {g}, {b})")
+    return colors
+
+
+print(list_of_rgb_colors(5))
+print(list_of_rgb_colors(1))
+print("#" * 50)
