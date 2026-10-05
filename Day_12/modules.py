@@ -29,4 +29,4 @@ def user_id_gen_by_user():
 print(user_id_gen_by_user())
 print("#" * 50)
 
-# def rgb_color_gen()
+def rgb_color_gen():
