@@ -77,3 +77,9 @@ def generate_colors(color_type, count):
         return list_of_rgb_colors(count)
     else:
         return ValueError("Invalid colot type, Use 'hexa' or 'rgb'.")
+
+
+print(generate_colors("hexa", 3))
+print(generate_colors("hexa", 1))
+print(generate_colors("rgb", 3))
+print(generate_colors("rgb", 1))
