@@ -68,3 +68,17 @@ def list_of_rgb_colors(count=1):
 print(list_of_rgb_colors(5))
 print(list_of_rgb_colors(1))
 print("#" * 50)
+
+
+def list_of_hexa_colors(count=1):
+    hex_digits = "0123456789abcdef"
+    colors = []
+    for _ in range(count):
+        hex_code = "#" + "".join(random.choices(hex_digits, k=6))
+        colors.append(hex_code)
+    return colors
+
+
+print(list_of_hexa_colors(5))
+print(list_of_hexa_colors(1))
+print("#" * 50)
