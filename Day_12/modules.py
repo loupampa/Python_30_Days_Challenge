@@ -83,3 +83,13 @@ print(generate_colors("hexa", 3))
 print(generate_colors("hexa", 1))
 print(generate_colors("rgb", 3))
 print(generate_colors("rgb", 1))
+
+
+def shuffle_list(lst):
+    shuffled = lst.copy()
+    random.shuffle(shuffled)
+    return shuffled
+
+
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print("Shuffled List:", shuffle_list(my_list))
