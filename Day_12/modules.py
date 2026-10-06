@@ -68,3 +68,12 @@ def list_of_rgb_colors(count=1):
 print(list_of_rgb_colors(5))
 print(list_of_rgb_colors(1))
 print("#" * 50)
+
+
+def generate_colors(color_type, count):
+    if color_type == "hexa":
+        return list_of_hexa_colors(count)
+    elif color_type == "rgb":
+        return list_of_rgb_colors(count)
+    else:
+        return ValueError("Invalid colot type, Use 'hexa' or 'rgb'.")
