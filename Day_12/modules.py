@@ -95,3 +95,11 @@ def shuffle_list(lst):
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print("Shuffled List:", shuffle_list(my_list))
 print("#" * 50)
+
+
+def seven_unique_numbers():
+    return random.sample(range(10), 7)
+
+
+print("Seven Unique Numbers:", seven_unique_numbers())
+print("#" * 50)
