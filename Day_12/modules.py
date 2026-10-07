@@ -83,6 +83,7 @@ print(generate_colors("hexa", 3))
 print(generate_colors("hexa", 1))
 print(generate_colors("rgb", 3))
 print(generate_colors("rgb", 1))
+print("#" * 50)
 
 
 def shuffle_list(lst):
