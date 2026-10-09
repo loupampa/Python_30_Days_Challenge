@@ -51,3 +51,22 @@ print(positive_even_numbers)
 list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flattened_list = [i for row in list_of_lists for i in row]
 print(flattened_list)
+
+# Lambda Function
+## It can take any number of arguments, but can only have one expression.
+## Syntax : x = lambda param1, param2, param3:param1 + param2 + param3 ; print(x(arg1, arg2, arg3))
+
+# EXAMPLES
+
+
+# Named function
+# Normal way
+def add_two_nums(a, b):
+    return a + b
+
+
+print(add_two_nums(2, 3))
+
+# Lambda function way
+add_two_numbers = lambda a, b: a + b
+print(add_two_nums(2, 3))
