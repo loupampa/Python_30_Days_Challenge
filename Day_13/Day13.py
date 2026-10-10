@@ -71,7 +71,7 @@ print(add_two_nums(2, 3))
 add_two_numbers = lambda a, b: a + b
 print(add_two_nums(2, 3))
 
-# Self invking lambda function
+# Self invoking lambda function
 (lambda a, b: a + b)(2, 3)
 square = lambda x: x**2
 print(square(3))
