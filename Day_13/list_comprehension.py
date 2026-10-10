@@ -9,3 +9,18 @@ print(negatives_only)
 list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flattened_list = [i for group in list_of_lists for i in group]
 print(flattened_list)
+
+# Creating a list of tuples
+tuples = [
+    (
+        i,
+        1,
+        1 * i,
+        (1 * i) * (1 * i),
+        (1 * i) * (1 * i) * (1 * i),
+        (1 * i) * (1 * i) * (1 * i) * (1 * i),
+        (1 * i) * (1 * i) * (1 * i) * (1 * i) * (1 * i),
+    )
+    for i in range(11)
+]
+print(tuples)
