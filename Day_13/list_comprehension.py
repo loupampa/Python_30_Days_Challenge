@@ -52,3 +52,14 @@ names = [
 ]
 concatenated_names = [f"{first} {last}" for [(first, last)] in names]
 print(concatenated_names)
+
+# Writing a lambda function
+# Slope: m = (y2 - y1) / (x2 - x1)
+get_slope = lambda x1, y1, x2, y2: (y2 - y1) / (x2 - x1)
+
+# Y-intercept: b = y1 - m * x1
+get_intercept = lambda x1, y1, x2, y2: y1 - get_slope(x1, y1, x2, y2) * x1
+
+# Example usage:
+print(get_slope(2, 5, 4, 9))  # Output: 2.0
+print(get_intercept(2, 5, 4, 9))  # Output: 1.0
