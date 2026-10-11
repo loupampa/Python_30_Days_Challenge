@@ -32,3 +32,13 @@ flattened_countries = [
     for [(country, city)] in countries
 ]
 print(flattened_countries)
+
+# Changing the list to a list of dictionaries
+countries = [[("Finland", "Helsinki")], [("Sweden", "Stockholm")], [("Norway", "Oslo")]]
+keys = ["country", "city"]
+
+dictionary_list = [
+    {keys[0]: country.upper(), keys[1]: city.upper()} for [(country, city)] in countries
+]
+
+print(dictionary_list)
