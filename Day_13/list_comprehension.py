@@ -42,3 +42,13 @@ dictionary_list = [
 ]
 
 print(dictionary_list)
+
+# Changing the list to a list of concatenated strings
+names = [
+    [("Asabeneh", "Yetayeh")],
+    [("David", "Smith")],
+    [("Donald", "Trump")],
+    [("Bill", "Gates")],
+]
+concatenated_names = [f"{first} {last}" for [(first, last)] in names]
+print(concatenated_names)
