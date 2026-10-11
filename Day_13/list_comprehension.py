@@ -27,7 +27,6 @@ print(tuples)
 
 # Flattening a new list
 countries = [[("Finland", "Helsinki")], [("Sweden", "Stockholm")], [("Norway", "Oslo")]]
-# print(challenge.isupper()) ## from day 4
 flattened_countries = [
     [country.upper(), country[:3].upper(), city.upper()]
     for [(country, city)] in countries
