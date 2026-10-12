@@ -1,18 +1,18 @@
 # Exercises - Day 13
 
-# filtering only negatrive and zero in the list using list comprehension
+# 1. filtering only negatrive and zero in the list using list comprehension
 numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
 negatives_only = [i for i in numbers if i < 0]
 print(negatives_only)
 print(50 * "#")
 
-# Flattening the list of lists of lists to one dimensional list
+# 2 .Flattening the list of lists of lists to one dimensional list
 list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flattened_list = [i for group in list_of_lists for i in group]
 print(flattened_list)
 print(50 * "#")
 
-# Creating a list of tuples
+# 3. Creating a list of tuples
 tuples = [
     (
         i,
@@ -28,7 +28,7 @@ tuples = [
 print(tuples)
 print(50 * "#")
 
-# Flattening a new list
+# 4. Flattening a new list
 countries = [[("Finland", "Helsinki")], [("Sweden", "Stockholm")], [("Norway", "Oslo")]]
 flattened_countries = [
     [country.upper(), country[:3].upper(), city.upper()]
@@ -37,7 +37,7 @@ flattened_countries = [
 print(flattened_countries)
 print(50 * "#")
 
-# Changing the list to a list of dictionaries
+# 5.Changing the list to a list of dictionaries
 countries = [[("Finland", "Helsinki")], [("Sweden", "Stockholm")], [("Norway", "Oslo")]]
 keys = ["country", "city"]
 
@@ -48,7 +48,7 @@ dictionary_list = [
 print(dictionary_list)
 print(50 * "#")
 
-# Changing the list to a list of concatenated strings
+# 6. Changing the list to a list of concatenated strings
 names = [
     [("Asabeneh", "Yetayeh")],
     [("David", "Smith")],
@@ -59,7 +59,7 @@ concatenated_names = [f"{first} {last}" for [(first, last)] in names]
 print(concatenated_names)
 print(50 * "#")
 
-# Writing a lambda function
+# 7. Writing a lambda function
 # Slope: m = (y2 - y1) / (x2 - x1)
 get_slope = lambda x1, y1, x2, y2: (y2 - y1) / (x2 - x1)
 
