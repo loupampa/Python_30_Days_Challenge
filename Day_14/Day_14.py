@@ -188,3 +188,5 @@ print(list(names_upper_cased))
 # Lets apply it with a lambda function
 names_upper_cased = map(lambda name: name.upper(), names)
 print(list(names_upper_cased))
+
+## Python Filter Function
