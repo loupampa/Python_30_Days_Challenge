@@ -77,7 +77,7 @@ def greeting():
     return "Hello, welcome to Python"
 
 
-def uppercase_decorator(func):
+def uppercase_decorator(function):
     def wrapper():
         func = function()
         make_uppercase = func.upper()
@@ -88,3 +88,21 @@ def uppercase_decorator(func):
 
 g = uppercase_decorator(greeting)
 print(g())
+
+
+# Higher order function that takes a function as a parameter
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+
+    return wrapper
+
+
+@uppercase_decorator
+def greeting():
+    return "Hello, welcome to Python"
+
+
+print(greeting())
