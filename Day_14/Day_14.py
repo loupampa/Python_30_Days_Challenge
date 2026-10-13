@@ -106,3 +106,51 @@ def greeting():
 
 
 print(greeting())
+
+
+## Applying Multiple Decorators to a Single function
+# First Decorator
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+
+    return wrapper
+
+
+# Second Decorator
+def split_string_decorator(function):
+    def wrapper():
+        func = function()
+        splitted_string = func.split()
+        return splitted_string
+
+    return wrapper
+
+
+# Decorators will be executed from bottom to top
+@split_string_decorator
+@uppercase_decorator
+def greeting():
+    return "Hello, welcome to Python"
+
+
+print(greeting())
+
+
+## Accepting Parameters in Decorator Functions
+def decorator_with_parameters(function):
+    def wrapper_accepting_parameters(para1, para2, para3):
+        function(para1, para2, para3)
+        print(f"I live in {para3}")
+
+    return wrapper_accepting_parameters
+
+
+@decorator_with_parameters
+def print_full_name(first_name, last_name, country):
+    print(f"I am {first_name} {last_name}. I love to code.")
+
+
+print_full_name("Lourdes", "Pampa", "Peru")
