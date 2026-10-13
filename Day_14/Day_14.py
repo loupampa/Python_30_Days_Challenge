@@ -154,3 +154,37 @@ def print_full_name(first_name, last_name, country):
 
 
 print_full_name("Lourdes", "Pampa", "Peru")
+
+## Built-in Higher Order Functions
+# Python Map Function
+numbers = [1, 2, 3, 4, 5]
+
+
+def square_two(x):
+    return x**2
+
+
+numbers_squared = map(square_two, numbers)
+print(list(numbers_squared))
+
+# Lets apply it with a lambda function
+numbers_squared = map(lambda x: x**2, numbers)
+print(list(numbers_squared))
+
+numbers_str = ["1", "2", "3", "4", "5"]
+numbers_int = map(int, numbers_str)
+print(list(numbers_int))
+
+names = ["Lourdes", "Pampa", "William", "Suarez"]
+
+
+def change_to_upper(name):
+    return name.upper()
+
+
+names_upper_cased = map(change_to_upper, names)
+print(list(names_upper_cased))
+
+# Lets apply it with a lambda function
+names_upper_cased = map(lambda name: name.upper(), names)
+print(list(names_upper_cased))
