@@ -1,4 +1,5 @@
 # Exercises - Day 14
+from functools import reduce
 
 # Explaining the difference between map, filter, and reduce
 ## Map transforms each item into a collection and a function
@@ -13,3 +14,14 @@ doubled = list(map(lambda x: x * 2, numbers))
 print(doubled)
 
 ## Filter
+numbers = [1, 2, 3, 4, 5, 6]
+# Keep only even numbers
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+print(evens)
+
+## Reduce
+numbers = [1, 2, 3, 4]
+
+# Multiply all numbers together: (((1*2) *3 *4)) =24
+product = reduce(lambda acc, x: acc * x, numbers)
+print(product)
