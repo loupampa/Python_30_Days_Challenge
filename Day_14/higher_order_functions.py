@@ -28,3 +28,7 @@ numbers = [1, 2, 3, 4]
 # Multiply all numbers together: (((1*2) *3 *4)) =24
 product = reduce(lambda acc, x: acc * x, numbers)
 print(product)
+
+# Explaining the difference between higher order function, closure and decorator
+## Higher-Order Function: Is any function that accepts a function as an argument, returns a function, or both, Funcftions treated as first-class data.
+### Passing callbacks, sorting bykeys ( sorted(...,key=fn)), map(), filter()
