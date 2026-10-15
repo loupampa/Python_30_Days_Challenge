@@ -32,3 +32,6 @@ print(product)
 # Explaining the difference between higher order function, closure and decorator
 ## Higher-Order Function: Is any function that accepts a function as an argument, returns a function, or both, Funcftions treated as first-class data.
 ### Passing callbacks, sorting bykeys ( sorted(...,key=fn)), map(), filter()
+
+## Closure is an inner function that retains access to variables from its outer enclosing scope, even after the outer function has finished executing, it captures and "closes over" lexical scope state
+### Function factories lightweight data hiding without classes.
