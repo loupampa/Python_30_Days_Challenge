@@ -36,4 +36,5 @@ print(product)
 ## Closure is an inner function that retains access to variables from its outer enclosing scope, even after the outer function has finished executing, it captures and "closes over" lexical scope state
 ### Function factories lightweight data hiding without classes.
 
-# Decorator is a design pattern (and syntax sugar @) that takes a function, extends or alters its behavior using a closure and returns the modified function
+## Decorator is a design pattern (and syntax sugar @) that takes a function, extends or alters its behavior using a closure and returns the modified function, it wraps an existing callable without altering its source code.
+### Logging, access control/auth. timing/profiling, caching.
