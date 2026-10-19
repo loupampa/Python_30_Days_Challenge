@@ -45,7 +45,7 @@ print(product)
 
 
 ## Transforming Elements by defining a function that takes one element and returns the transformed element:
-def to_uppercase(text):  # defining the callback function
+def to_uppercase(text):  # Defining the callback function
     return text.upper()
 
 
@@ -55,3 +55,14 @@ transformed = list(
     map(to_uppercase, words)
 )  # Passing the function by name (without parentheses) to map
 print(transformed)
+
+
+## Conditional Selection defining a predicatet function that takes one element and returns True to keep it, or False to discard it
+def is_even(n):  # Defining the predicate function
+    return n % 2 == 0
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+evens = list(filter(is_even, numbers))  # Passing the function to filter
+print(evens)
