@@ -1,7 +1,8 @@
 # Exercises - Day 14
 from functools import reduce
 
-# Explaining the difference between map, filter, and reduce
+# 1. Explaining the difference between map, filter, and reduce
+
 ## Map transforms each item into a collection and a function
 ## Filter selects items that pass a test into a collection and a predicate which returns true or false
 ## Recuce aggregate all items into one into a collection and an accumulator function
@@ -29,7 +30,8 @@ numbers = [1, 2, 3, 4]
 product = reduce(lambda acc, x: acc * x, numbers)
 print(product)
 
-# Explaining the difference between higher order function, closure and decorator
+# 2. Explaining the difference between higher order function, closure and decorator
+
 ## Higher-Order Function: Is any function that accepts a function as an argument, returns a function, or both, Funcftions treated as first-class data.
 ### Passing callbacks, sorting bykeys ( sorted(...,key=fn)), map(), filter()
 
@@ -38,3 +40,18 @@ print(product)
 
 ## Decorator is a design pattern (and syntax sugar @) that takes a function, extends or alters its behavior using a closure and returns the modified function, it wraps an existing callable without altering its source code.
 ### Logging, access control/auth. timing/profiling, caching.
+
+# 3. Defining a call function before map, filter or reduce
+
+
+## Transforming Elements by defining a function that takes one element and returns the transformed element:
+def to_uppercase(text):  # defining the callback function
+    return text.upper()
+
+
+words = ["python", "javascript", "golang"]
+
+transformed = list(
+    map(to_uppercase, words)
+)  # Passing the function by name (without parentheses) to map
+print(transformed)
