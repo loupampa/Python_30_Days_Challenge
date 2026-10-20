@@ -83,4 +83,13 @@ print(total_product)
 # 4. Use for loop to print each country in the countries list.
 countries = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"]
 for country in countries:
-    print(countries)
+    print(country)
+
+## If my list have nested Tuples
+countries2 = [
+    [("Finland", "Helsinki")],
+    [("Sweden", "Stockholm")],
+    [("Norway", "Oslo")],
+]
+for [(country, capital)] in countries2:
+    print(country)
