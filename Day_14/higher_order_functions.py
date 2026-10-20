@@ -79,3 +79,8 @@ values = [2, 3, 4, 5]
 
 total_product = reduce(multiply_numbers, values)  # Passing the function to reduce
 print(total_product)
+
+# 4. Use for loop to print each country in the countries list.
+countries = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"]
+for country in countries:
+    print(countries)
