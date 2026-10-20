@@ -66,3 +66,16 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 evens = list(filter(is_even, numbers))  # Passing the function to filter
 print(evens)
+
+
+## Aggregation by defining an accumulator function that takes two arguments; the rolling total/accumulator and the current item
+
+
+def multiply_numbers(acc, curr):  # Defining the binary reduction function
+    return acc * curr
+
+
+values = [2, 3, 4, 5]
+
+total_product = reduce(multiply_numbers, values)  # Passing the function to reduce
+print(total_product)
