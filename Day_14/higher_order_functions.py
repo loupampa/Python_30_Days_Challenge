@@ -104,18 +104,20 @@ numbers = [27, 24, 7, 10, 4]
 for number in numbers:
     print(number)
 
-# 7. Use map to create a new list by changing each country to uppercase in the countries list
+# 7. Use map to create a new list by changing each country to uppercase in the countries list.
 countries = ["Peru", "USA", "Finland", "Spain", "Tokyo"]
 uppercase_countries = list(map(str.upper, countries))
 print(uppercase_countries)
 
-# 8. Use map to create a new list by changing each number to its square in the numbers list
+# 8. Use map to create a new list by changing each number to its square in the numbers list.
 numbers = [1, 2, 3, 4, 5, 6]
 ## squared_numbers = list(map(lambda x: x**2, numbers)) ##old method
 squared_numbers = [x**2 for x in numbers]
 print(squared_numbers)
 
-# 9. Use map to change each name to uppercase in the names list
+# 9. Use map to change each name to uppercase in the names list.
 names = ["William", "Marga", "Lili", "Kami", "Ale"]
 uppercase_names = list(map(str.upper, names))
 print(uppercase_names)
+
+# 10. Use filter to filter out countries containing 'land'.
