@@ -98,3 +98,5 @@ for [(country, capital)] in countries2:
 names = ["William", "Marga", "Lili", "Kami", "Ale"]
 for name in names:
     print(name)
+
+# 6. Use for to print each number in the numbers list.
