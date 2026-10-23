@@ -100,3 +100,6 @@ for name in names:
     print(name)
 
 # 6. Use for to print each number in the numbers list.
+numbers = [27, 24, 7, 10, 4]
+for number in numbers:
+    print(number)
