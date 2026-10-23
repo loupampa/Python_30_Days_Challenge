@@ -93,3 +93,5 @@ countries2 = [
 ]
 for [(country, capital)] in countries2:
     print(country)
+
+# 5. Use for to print each name in the names list.
