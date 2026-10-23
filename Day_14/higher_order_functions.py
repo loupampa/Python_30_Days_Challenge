@@ -110,3 +110,7 @@ uppercase_countries = list(map(str.upper, countries))
 print(uppercase_countries)
 
 # 8. Use map to create a new list by changing each number to its square in the numbers list
+numbers = [1, 2, 3, 4, 5, 6]
+squared_numbers = list(map(lambda x: x**2, numbers))
+squared_numbers = [x**2 for x in numbers]
+print(squared_numbers)
