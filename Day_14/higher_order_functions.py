@@ -105,3 +105,6 @@ for number in numbers:
     print(number)
 
 # 7. Use map to create a new list by changing each country to uppercase in the countries list
+countries = ["Peru", "USA", "Finland", "Spain", "Tokyo"]
+uppercase_countries = list(map(str.upper, countries))
+print(uppercase_countries)
