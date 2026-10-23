@@ -129,3 +129,5 @@ print(countries_filter)
 countries4 = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"]
 countries_length_filter = list(filter(lambda c: len(c) != 6, countries4))
 print(countries_length_filter)
+
+# 12. Use filter to filter out countries starting with an 'E'.
