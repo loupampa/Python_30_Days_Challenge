@@ -108,3 +108,5 @@ for number in numbers:
 countries = ["Peru", "USA", "Finland", "Spain", "Tokyo"]
 uppercase_countries = list(map(str.upper, countries))
 print(uppercase_countries)
+
+# 8. Use map to create a new list by changing each number to its square in the numbers list
