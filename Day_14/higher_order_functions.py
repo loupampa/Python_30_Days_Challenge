@@ -124,3 +124,5 @@ print(uppercase_names)
 countries3 = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"]
 countries_filter = list(filter(lambda c: "land" not in c.lower(), countries3))
 print(countries_filter)
+
+# 11. Use filter to filter out countries having exactly six characters.
