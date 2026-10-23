@@ -103,3 +103,5 @@ for name in names:
 numbers = [27, 24, 7, 10, 4]
 for number in numbers:
     print(number)
+
+# 7. Use map to create a new list by changing each country to uppercase in the countries list
