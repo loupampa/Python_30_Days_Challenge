@@ -126,3 +126,6 @@ countries_filter = list(filter(lambda c: "land" not in c.lower(), countries3))
 print(countries_filter)
 
 # 11. Use filter to filter out countries having exactly six characters.
+countries4 = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"]
+countries_length_filter = list(filter(lambda c: len(c) != 6, countries4))
+print(countries_length_filter)
