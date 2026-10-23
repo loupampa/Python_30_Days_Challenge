@@ -121,3 +121,6 @@ uppercase_names = list(map(str.upper, names))
 print(uppercase_names)
 
 # 10. Use filter to filter out countries containing 'land'.
+countries3 = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"]
+countries_filter = list(filter(lambda c: "land" not in c.lower(), countries3))
+print(countries_filter)
