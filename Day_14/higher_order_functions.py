@@ -116,4 +116,6 @@ squared_numbers = [x**2 for x in numbers]
 print(squared_numbers)
 
 # 9. Use map to change each name to uppercase in the names list
-# names = ["William", "Marga", "Lili", "Kami", "Ale"]
+names = ["William", "Marga", "Lili", "Kami", "Ale"]
+uppercase_names = list(map(str.upper, names))
+print(uppercase_names)
