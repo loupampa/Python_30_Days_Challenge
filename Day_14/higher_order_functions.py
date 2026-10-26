@@ -157,3 +157,5 @@ total = (
     numbers.filter(lambda x: x > 10).map(lambda x: x**2).reduce(lambda acc, x: acc + x)
 )
 print(total)
+
+# 14. Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
