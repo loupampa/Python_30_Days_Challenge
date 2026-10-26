@@ -134,3 +134,5 @@ print(countries_length_filter)
 countries5 = ["Estonia", "Finland", "Sweden", "Egypt", "Norway", "Ecuador", "Denmark"]
 countries_without_e = list(filter(lambda c: not c.lower().startswith("e"), countries5))
 print(countries_without_e)
+
+# 13. Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
