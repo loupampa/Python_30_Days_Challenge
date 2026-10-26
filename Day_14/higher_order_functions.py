@@ -158,4 +158,11 @@ total = (
 )
 print(total)
 
+
 # 14. Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
+def get_string_lists(lst):
+    return list(filter(lambda item: isinstance(item, str), lst))
+
+
+mixed_list = ["Finland", 25, "Sweden", 3.14, True, "Norway", None, "Denmark"]
+print(get_string_lists(mixed_list))
