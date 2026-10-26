@@ -135,4 +135,25 @@ countries5 = ["Estonia", "Finland", "Sweden", "Egypt", "Norway", "Ecuador", "Den
 countries_without_e = list(filter(lambda c: not c.lower().startswith("e"), countries5))
 print(countries_without_e)
 
+
 # 13. Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
+# Using map(), filter() and reduce()
+class FluentList(list):
+    def map(self, func):
+        return FluentList(map(func, self))
+
+    def filter(self, func):
+        return FluentList(filter(func, self))
+
+    def reduce(self, func, initial=None):
+        if initial is not None:
+            return reduce(func, self, initial)
+        return reduce(func, self)
+
+
+# Method-chaining usage:
+numbers = FluentList([2, 5, 11, 8, 14, 3, 20])
+total = (
+    numbers.filter(lambda x: x > 10).map(lambda x: x**2).reduce(lambda acc, x: acc + x)
+)
+print(total)
