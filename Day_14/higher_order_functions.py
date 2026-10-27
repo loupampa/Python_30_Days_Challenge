@@ -166,3 +166,7 @@ def get_string_lists(lst):
 
 mixed_list = ["Finland", 25, "Sweden", 3.14, True, "Norway", None, "Denmark"]
 print(get_string_lists(mixed_list))
+
+# 15. Use reduce to sum all the numbers in the numbers list.
+numbers_list = [2, 27, 10, 30, 22, 15, 14, 28, 17]
+sum_numbers_list = reduce()
