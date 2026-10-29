@@ -172,3 +172,19 @@ numbers_list = [2, 27, 10, 30, 22, 15, 14, 28, 17]
 sum_numbers_list = reduce()
 
 # 16. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
+countries6 = ["Estonia", "Finland", "Sweden", "Denmark", "Norway", "Iceland"]
+
+
+def format_countries(acc, curr):
+    # If on the last element, add ', and '
+    if curr == countries[-1]:
+        return f"{acc}, and {curr}"
+    # Otherwise, join with a comma and space
+    return f"{acc}, {curr}"
+
+
+# Reduce to format the list, then append the ending phrase
+sentence = reduce(format_countries, countries) + " are north European countries"
+
+print(sentence)
+# Output: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
