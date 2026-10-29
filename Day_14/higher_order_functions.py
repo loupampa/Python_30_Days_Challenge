@@ -222,4 +222,28 @@ print(categorize_countries("ia", countries))
 
 print(categorize_countries("island", countries))
 
+
 # 18. Create a function returning a dictionary, where keys stand for starting letters of countries and values are the number of country names starting with that letter.
+def count_countries_by_starting_letter(countries):
+    letter_counts = {}
+    for country in countries:
+        if country:
+            first_letter = country[0].upper()
+            letter_counts[first_letter] = letter_counts.get(first_letter, 0) + 1
+    return letter_counts
+
+
+countries = [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Brazil",
+    "Canada",
+    "China",
+    "Denmark",
+    "Estonia",
+    "Finland",
+    "France",
+    "Germany",
+]
+print(count_countries_by_starting_letter(countries))
