@@ -169,7 +169,8 @@ print(get_string_lists(mixed_list))
 
 # 15. Use reduce to sum all the numbers in the numbers list.
 numbers_list = [2, 27, 10, 30, 22, 15, 14, 28, 17]
-sum_numbers_list = reduce()
+sum_numbers_list = reduce(lambda acc, curr: acc + curr, numbers)
+print(sum_numbers_list)
 
 # 16. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
 countries6 = ["Estonia", "Finland", "Sweden", "Denmark", "Norway", "Iceland"]
