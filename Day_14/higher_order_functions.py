@@ -221,3 +221,5 @@ print(categorize_countries("stan", countries))
 print(categorize_countries("ia", countries))
 
 print(categorize_countries("island", countries))
+
+# 18. Create a function returning a dictionary, where keys stand for starting letters of countries and values are the number of country names starting with that letter.
