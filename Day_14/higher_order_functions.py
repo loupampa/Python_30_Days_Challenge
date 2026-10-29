@@ -1,4 +1,5 @@
 # Exercises - Day 14
+from data import countries_data
 from functools import reduce
 
 # 1. Explaining the difference between map, filter, and reduce
@@ -249,3 +250,4 @@ countries = [
 print(count_countries_by_starting_letter(countries))
 
 # 19. Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
+def get_first_ten_cuntries(lst, countries):
