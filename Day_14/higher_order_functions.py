@@ -188,3 +188,5 @@ sentence = reduce(format_countries, countries) + " are north European countries"
 
 print(sentence)
 # Output: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
+
+# 17. Declare a function called categorize_countries that returns a list of countries with some common pattern (you can find the countries list in this repository as countries.js(eg 'land', 'ia', 'island', 'stan')).
