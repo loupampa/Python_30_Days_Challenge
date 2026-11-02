@@ -249,4 +249,13 @@ countries = [
 print(count_countries_by_starting_letter(countries))
 
 # 19. Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
-# def get_first_ten_cuntries(lst, countries):
+def get_first_ten_countries(lst, countries):
+
+with open(filepath, "r", encoding="utf-8") as file:
+        content = file.read()
+
+    # Match string literals (both single and double quoted) inside array declarations
+    countries = re.findall(r"['\"]([A-Za-z\s\(\)\.\-]+)['\"]", content)
+
+    # Return the first 10 items using slicing
+    return countries[:10]
