@@ -1,7 +1,13 @@
 # Exercises - Day 14
-import re
+import sys
 from functools import reduce
+from pathlib import Path
 
+# Add the project root folder (one directory above Day_14) to Python's search path
+ROOT_DIR = Path(__file__).resolve().parent.parent
+sys.path.append(str(ROOT_DIR))
+
+# Now this import will work
 from data.countries import countries_data
 
 # 1. Explaining the difference between map, filter, and reduce
@@ -254,8 +260,14 @@ print(count_countries_by_starting_letter(countries))
 
 # 19. Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
 def get_first_ten_countries():
-    if countries_data and isinstance(countries_data[0], dict) and "name" in countries_data[0]:
-        return [country["name" for country in countries_data[:10]]
+    if (
+        countries_data
+        and isinstance(countries_data[0], dict)
+        and "name" in countries_data[0]
+    ):
+        return [country["name"] for country in countries_data[:10]]
 
     return countries_data[:10]
 
+
+print(get_first_ten_countries())
