@@ -273,3 +273,4 @@ def get_first_ten_countries():
 print(get_first_ten_countries())
 
 # 20. Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
+def get_last_ten_countries():
