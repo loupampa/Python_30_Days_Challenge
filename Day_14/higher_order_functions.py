@@ -272,5 +272,16 @@ def get_first_ten_countries():
 
 print(get_first_ten_countries())
 
+
 # 20. Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
 def get_last_ten_countries():
+    if (
+        countries_data
+        and isinstance(countries_data[0], dict)
+        and "name" in countries_data[0]
+    ):
+        return [country["name"] for country in countries_data[-10:]]
+    return countries_data[-10:]
+
+
+print(get_last_ten_countries())
