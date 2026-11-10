@@ -9,6 +9,7 @@ sys.path.append(str(ROOT_DIR))
 
 # Now this import will work
 from data.countries import countries_data
+from data.countries_data import *
 
 # 1. Explaining the difference between map, filter, and reduce
 
@@ -285,4 +286,18 @@ def get_last_ten_countries():
 
 
 print(get_last_ten_countries())
+
+
 # 21. Use a countries_data.py and sort countries by name, by capital, by population
+def sort_countries(data, sort_by="name", reverse=False):
+    if sort_by not in ["name", "capital", "population"]:
+        raise ValueError("sort_by must be 'name', 'capital', or 'population'")
+    return sorted(
+        data,
+        key=lambda country: (
+            country.get(sort_by, "").lower()
+            if isinstance(country.get(sort_by), str)
+            else country.get(sort_by, 0)
+        ),
+        reverse=reverse,
+    )
