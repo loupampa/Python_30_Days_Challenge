@@ -9,7 +9,6 @@ sys.path.append(str(ROOT_DIR))
 
 # Now this import will work
 from data.countries import countries_data
-from data.countries_data import *
 
 # 1. Explaining the difference between map, filter, and reduce
 
@@ -289,15 +288,30 @@ print(get_last_ten_countries())
 
 
 # 21. Use a countries_data.py and sort countries by name, by capital, by population
-def sort_countries(data, sort_by="name", reverse=False):
+def sort_countries(countries_list_large, sort_by="name", reverse=False):
+    if not data:
+        return []
+
+    # If the list is just plain strings (e.g., ['Afghanistan', 'Albania', ...])
+    if isinstance(data[0], str):
+        if sort_by != "name":
+            raise ValueError(
+                f"Cannot sort plain string list by '{sort_by}'. Use the full countries_data dictionaries."
+            )
+        return sorted(data, key=lambda c: c.lower(), reverse=reverse)
+
+    # If the list contains dictionaries
     if sort_by not in ["name", "capital", "population"]:
         raise ValueError("sort_by must be 'name', 'capital', or 'population'")
-    return sorted(
-        data,
-        key=lambda country: (
-            country.get(sort_by, "").lower()
-            if isinstance(country.get(sort_by), str)
-            else country.get(sort_by, 0)
-        ),
-        reverse=reverse,
-    )
+
+    def sort_key(country):
+        val = country.get(sort_by, "")
+        if isinstance(val, str):
+            return val.lower()
+        return val if val is not None else 0
+
+    return sorted(data, key=sort_key, reverse=reverse)
+
+
+print(50 * "#")
+by_name = sort_countries(countries_data, sort_by="name")
