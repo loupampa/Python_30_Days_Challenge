@@ -104,3 +104,19 @@ today = date.today()
 print("Current year: ", today.year)
 print("Current month: ", today.month)
 print("Current day: ", today.day)
+
+# Time objects to represent time
+
+from datetime import time
+
+t = time()
+print("time =", t)
+
+t1 = time(10, 30, 45)
+print("time =", t1)  # This will print the time in HH:MM:
+
+t3 = time(hour=10, minute=30, second=45)
+print("time =", t3)  # This will print the time in HH:MM:
+
+t4 = time(10, 30, 50, 200555)
+print("time =", t4)  # This will print the time in HH:MM:
