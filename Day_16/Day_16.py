@@ -91,3 +91,16 @@ date_object = datetime.strptime(date_string, "%d %B, %Y")
 print(
     "date_object =", date_object
 )  # This will print the date object in YYYY-MM-DD HH:MM:SS format.
+
+# Using date from datetime
+
+from datetime import date
+
+d = date(2027, 1, 1)
+print("date =", d)  # This will print the date in YYYY-MM-DD format.
+print("Current date = ", d.today())
+
+today = date.today()
+print("Current year: ", today.year)
+print("Current month: ", today.month)
+print("Current day: ", today.day)
