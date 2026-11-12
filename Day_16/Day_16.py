@@ -79,3 +79,15 @@ print(
 # %x - Local version of date
 # %X - Local version of time
 # %% - A % character
+
+# String to time using strptime
+
+from datetime import datetime
+
+date_string = "12 November, 2026"
+print("date_string =", date_string)
+
+date_object = datetime.strptime(date_string, "%d %B, %Y")
+print(
+    "date_object =", date_object
+)  # This will print the date object in YYYY-MM-DD HH:MM:SS format.
