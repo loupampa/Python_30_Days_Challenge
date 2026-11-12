@@ -31,3 +31,51 @@ print("timestamp:", timestamp)  # This will print the current timestamp.
 print(
     f"{day}/{month}/{year} {hour}:{minute}:{second}"
 )  # This will print the current date and time in a formatted way.
+
+# Formatting Date Output usin strftime
+
+from datetime import datetime
+
+now = datetime.now()
+t = now.strftime("%H:%M:%S")  # This will give us the current time in HH:MM:SS format.
+print("time:", t)  # This will print the current time in HH:MM:
+
+time_one = now.strftime(
+    "%m/%d/%Y, %H:%M:%S"
+)  # This will give us the current date and time in MM/DD/YYYY, HH:MM:SS format.
+print(
+    "time_one:", time_one
+)  # This will print the current date and time in MM/DD/YYYY, HH:MM:SS format.
+
+time_two = now.strftime(
+    "%d/%m/%Y, %H:%M:%S"
+)  # This will give us the current date and time in DD/MM/YYYY, HH:MM:SS format.
+print(
+    "time_two:", time_two
+)  # This will print the current date and time in DD/MM/YYYY, HH:MM:SS format.
+
+# strftime symbols:
+# %a - Weekday, short version
+# %A - Weekday, full version
+# %w - Weekday as a number 0-6, 0 is Sunday
+# %d - Day of month 01-31
+# %b - Month name, short version
+# %B - Month name, full version
+# %m - Month as a number 01-12
+# %y - Year, short version, without century
+# %Y - Year, full version
+# %H - Hour 00-23
+# %I - Hour 00-12
+# %p - AM/PM
+# %M - Minute 00-59
+# %S - Second 00-59
+# %f - Microsecond 000000-999999
+# %z - UTC offset
+# %Z - Timezone
+# %j - Day number of year 001-366
+# %U - Week number of year, Sunday as the first day of week, 00
+# %W - Week number of year, Monday as the first day of week, 00-53
+# %c - Local version of date and time
+# %x - Local version of date
+# %X - Local version of time
+# %% - A % character
