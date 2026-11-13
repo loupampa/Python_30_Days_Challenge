@@ -14,3 +14,5 @@ timestamp = now.timestamp
 print(
     f"Current day: {day}, month: {month}, year: {year}, hour: {hour}, minute: {minute}, timestamp: {timestamp}"
 )
+
+# Format the current date using this format: "%m/%d/%Y, %H:%M:%S")
