@@ -22,3 +22,7 @@ current_date_formatted = now.strftime("%m/%d/%Y, %H:%M:%S")
 print(f"Current date formatted: {current_date_formatted}")
 
 # Today is 13 November 2026. Change this time string to time
+
+today_string = "13 November, 2026"
+time_object = datetime.strptime(today_string, "%d %B, %Y")
+print(f"Time object from string: {time_object}")
