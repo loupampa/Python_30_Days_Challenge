@@ -1,8 +1,9 @@
 # Exercises - Day 16
 from datetime import datetime
 
-# Get the current day, month, year, hour, minute, and timestamp from datetime module
 now = datetime.now()
+
+# Get the current day, month, year, hour, minute, and timestamp from datetime module
 
 day = now.day
 month = now.month
@@ -16,3 +17,5 @@ print(
 )
 
 # Format the current date using this format: "%m/%d/%Y, %H:%M:%S")
+current_date_formatted = now.strftime("%m/%d/%Y, %H:%M:%S")
+print(f"Current date formatted: {current_date_formatted}")
