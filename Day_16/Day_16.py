@@ -120,3 +120,23 @@ print("time =", t3)  # This will print the time in HH:MM:
 
 t4 = time(10, 30, 50, 200555)
 print("time =", t4)  # This will print the time in HH:MM:
+
+# Difference between two points in time
+
+from datetime import date, datetime
+
+today = date(year=2026, month=11, day=12)
+new_year = date(year=2027, month=1, day=1)
+time_left_for_newyear = new_year - today
+
+print(
+    "Time left for new year:", time_left_for_newyear
+)  # This will print the time left for new year in days.
+
+t1 = datetime(year=2026, month=11, day=12, hour=0, minute=50, second=0)
+t2 = datetime(year=2027, month=1, day=1, hour=0, minute=0, second=0)
+difference = t2 - t1
+
+print(
+    "Time left for new year:", difference
+)  # This will print the time left for new year in days, hours, minutes and seconds.
