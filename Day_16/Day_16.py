@@ -140,3 +140,14 @@ difference = t2 - t1
 print(
     "Time left for new year:", difference
 )  # This will print the time left for new year in days, hours, minutes and seconds.
+
+# Difference between two points in time using timedelta
+
+from datetime import timedelta
+
+t1 = timedelta(weeks=12, days=10, hours=4, seconds=20)
+t2 = timedelta(days=7, hours=5, minutes=3, seconds=30)
+t3 = t1 - t2
+print(
+    "Difference between two points in time using timedelta:", t3
+)  # This will print the difference between two points in time using timedelta.
