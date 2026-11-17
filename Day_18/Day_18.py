@@ -49,3 +49,20 @@ print(start, end)  # Lets find the start and stop position from the span # 100 1
 
 substring = txt[start:end]
 print(substring)  # first
+
+### Searching for All Matches Using findall
+txt = """Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language"""
+
+matches = re.findall("language", txt, re.IGNORECASE)  # It return a list
+print(matches)  # ['language', 'language']
+
+matches = re.findall("python", txt, re.IGNORECASE)
+print(matches)  # ['Python', 'python']
+
+# In case we dont use re.IGNORECASE
+# matches = re.findall("Python|python", txt)
+# print(matches)  # ['Python', 'python']
+
+# matches = re.findall("[Pp]ython", txt)
+# print(matches)  # ['Python', 'python']
