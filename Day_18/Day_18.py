@@ -14,6 +14,38 @@ print("Showing attributes and methods of the re module", dir(re))
 # re.split: Takes a string, splits it at the match points, returns a list
 # re.sub: Replaces one or many matches within a string
 
+### Match
 txt = "I love to teach python, JavaScript, and Java"
 match = re.match("I love to teach", txt, re.IGNORECASE)
 print(match)  # It returns an object with span, and match
+
+span = match.span()
+print(
+    span
+)  # We can get the starting and ending position of the match as tuple using span
+
+start, end = span
+print(start, end)
+
+substring = txt[start:end]
+print(substring)
+
+match = re.match("I like to teach", txt, re.IGNORECASE)
+print(match)  # There is no match with the previos txt
+
+### Search
+txt = """Python is the most beautiful language that a human being has ever I recommend python for a first programming language"""
+
+match = re.search("first", txt, re.IGNORECASE)
+print(match)
+
+span = match.span()
+print(
+    span
+)  # We can get the starting and ending position of the match as tuple using span
+
+start, end = span
+print(start, end)  # Lets find the start and stop position from the span # 100 105
+
+substring = txt[start:end]
+print(substring)  # first
