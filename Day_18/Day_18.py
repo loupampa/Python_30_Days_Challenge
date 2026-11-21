@@ -170,3 +170,10 @@ regex_pattern = r"[a].*"  # . any character, * any character zero or more times
 txt = """Apple and banana are fruits"""
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['and banana are fruits']
+
+### Zero or one time(?)
+txt = """I am not sure if there is a convention how to write the word e-mail.
+Some people write it as email others may write it as Email or E-mail."""
+regex_pattern = r"[Ee]-?mail"  # ? means here that '-' is optional
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['e-mail', 'email', 'Email', 'E-mail']
