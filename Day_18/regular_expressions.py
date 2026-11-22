@@ -15,3 +15,5 @@ sorted_points = sorted(int(p) for p in points)
 distance = sorted_points[-1] - sorted_points[0]
 print(sorted_points)
 print(distance)
+
+# Write a pattern which identifies if a string is a valid python variable
