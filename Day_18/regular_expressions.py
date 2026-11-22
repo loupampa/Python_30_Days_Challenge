@@ -9,3 +9,9 @@ word_counts = Counter(words)
 print(word_counts)
 
 # The position of some particles on the horizontal x-axis are -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers from this whole text and find the distance between the two furthest particles.
+points = ["-12", "-4", "-3", "-1", "0", "4", "8"]
+
+sorted_points = sorted(int(p) for p in points)
+distance = sorted_points[-1] - sorted_points[0]
+print(sorted_points)
+print(distance)
