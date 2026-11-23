@@ -42,3 +42,21 @@
 # print(type(lines))
 # print(lines)
 # f.close()
+
+## Opening File for Writing and Updating
+# To write to an existing file, we must add a mode as parameter to the open() function:
+# "a" - append - will append to the end of the file, if the file does not exist it creates a new file.
+# "w" - write - will overwrite any existing content, if the file does not exist it creates.
+# with open('./files/reading_file_example.txt','a') as f:
+#     f.write('This text has to be appended at the end')
+
+## Deleting Files
+# We have seen in previous section, how to make and remove a directory using os module.
+# import os
+# os.remove('./files/example.txt')
+# If the file does not exist, the remove method will raise an error, so it is good to use a condition like this:
+# import os
+# if os.path.exists('./files/example.txt'):
+#     os.remove('./files/example.txt')
+# else:
+#     print('The file does not exist')
