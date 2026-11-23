@@ -16,4 +16,14 @@ distance = sorted_points[-1] - sorted_points[0]
 print(sorted_points)
 print(distance)
 
+
 # Write a pattern which identifies if a string is a valid python variable
+def is_valid_variable(name):
+    pattern = r"^[a-zA-Z_][a-zA-Z0-9_]*$"
+    return bool(re.match(pattern, name))
+
+
+print(is_valid_variable("first_name"))  # True
+print(is_valid_variable("first-name"))  # False
+print(is_valid_variable("1first_name"))  # False
+print(is_valid_variable("firstname"))  # True
