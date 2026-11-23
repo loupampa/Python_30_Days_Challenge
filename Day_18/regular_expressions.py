@@ -29,3 +29,19 @@ print(is_valid_variable("1first_name"))  # False
 print(is_valid_variable("firstname"))  # True
 
 # Clean the following text. After cleaning, count three most frequent words in the string.
+sentence = """%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?"""
+
+
+def clean_text(text):
+    return re.sub(r"[^a-zA-Z\s]", "", text)
+
+
+def most_frequent_words(text):
+    words = text.split()
+    counts = Counter(words)
+    return [(count, word) for word, count in counts.most_common(3)]
+
+
+cleaned_text = clean_text(sentence)
+print(cleaned_text)
+print(most_frequent_words(cleaned_text))
