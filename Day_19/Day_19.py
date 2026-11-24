@@ -125,3 +125,19 @@
 # }
 # with open('./files/json_example.json', 'w', encoding='utf-8') as f:
 #     json.dump(person, f, ensure_ascii=False, indent=4)
+
+## File with csv Extension
+# csv stands for comma separated values. CSV is a simple file format used to store tabular data, such as a spreadsheet or database.
+# import csv
+# with open('./files/csv_example.csv') as f:
+#     csv_reader = csv.reader(f, delimiter=',') # we use, reader method to read csv
+#     line_count = 0
+#     for row in csv_reader:
+#         if line_count == 0:
+#             print(f'Column names are :{", ".join(row)}')
+#             line_count += 1
+#         else:
+#             print(
+#                 f'\t{row[0]} is a teachers. He lives in {row[1]}, {row[2]}.')
+#             line_count += 1
+#     print(f'Number of lines:  {line_count}')
