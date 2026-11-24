@@ -112,3 +112,16 @@
 # person_json = json.dumps(person, indent=4) # indent could be 2, 4, 8. It beautifies the json
 # print(type(person_json))
 # print(person_json)
+
+## Saving as JSON File
+# lets save it as a json file using the following steps. for writing a json file, we use the json.dump() method, it can take dictionary, output file, ensure_ascii and indent.
+# import json
+# # python dictionary
+# person = {
+#     "name": "Asabeneh",
+#     "country": "Finland",
+#     "city": "Helsinki",
+#     "skills": ["JavaScrip", "React", "Python"]
+# }
+# with open('./files/json_example.json', 'w', encoding='utf-8') as f:
+#     json.dump(person, f, ensure_ascii=False, indent=4)
