@@ -141,3 +141,10 @@
 #                 f'\t{row[0]} is a teachers. He lives in {row[1]}, {row[2]}.')
 #             line_count += 1
 #     print(f'Number of lines:  {line_count}')
+
+## File with xlsx Extension
+# To read excel files we need to install xlrs package
+# import xlrd
+# excel_book = xlrd.open_workbook('sample.xls')
+# print(excel_book.nsheets)
+# print(excel_book.sheet_names)
