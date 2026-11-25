@@ -151,6 +151,7 @@
 
 ## File with xml Extension
 # XML is another structured data format which looks like HTML. In XML the tags are not predefined.
+# The person tag is the root of the XML.
 # <?xml version="1.0"?>
 # <person gender="female">
 #   <name>Asabeneh</name>
