@@ -1,6 +1,5 @@
 # File Handling - Day 19
-
-import os
+from pathlib import Path
 
 
 # Write a function which count number of lines and number of words in a text.
@@ -13,6 +12,8 @@ def count_lines_and_words(file_path):
     return line_count, word_count
 
 
+script_dir = Path(__file__).resolve().parent
+
 files = [
     "obama_speech.txt",
     "michelle_obama_speech.txt",
@@ -21,6 +22,6 @@ files = [
 ]
 
 for filename in files:
-    path = os.path.join("data", filename)
+    path = script_dir / filename
     lines, words = count_lines_and_words(path)
     print(f"{filename}: {lines} lines, {words} words")
