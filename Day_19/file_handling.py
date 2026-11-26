@@ -25,3 +25,5 @@ for filename in files:
     path = script_dir / filename
     lines, words = count_lines_and_words(path)
     print(f"{filename}: {lines} lines, {words} words")
+
+# Read the countries_data.json data file in data directory, create a function that finds the ten most spoken languages
