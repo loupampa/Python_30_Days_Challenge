@@ -27,3 +27,5 @@ for filename in files:
     print(f"{filename}: {lines} lines, {words} words")
 
 # Read the countries_data.json data file in data directory, create a function that finds the ten most spoken languages.
+def ten_most_spoken_languages(file_path):
+    with open(file_path, "r", encoding="utf-8") as file:
